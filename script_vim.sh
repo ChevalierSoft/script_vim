@@ -11,12 +11,10 @@ then
 	date=$(date '+%d-%m-%y_%H:%M:%S')
 	new_vimrc=".vimrc-$date"
 	echo ".vimrc archived as $new_vimrc"
-	#echo ~/$new_vimrc
-
-#	mv $vimrc ~/$new_vimrc
+	mv $vimrc ~/$new_vimrc
 fi
 
-#cp ./vimrc $vimrc
+cp ./vimrc $vimrc
 
 if [ ! -d $vim ]
 then
