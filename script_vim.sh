@@ -32,4 +32,4 @@ then
 	cp ./colors/$n_scheme $a_scheme
 fi
 
-
+echo "#set -g default-terminal \"xterm\"" >> ~/.tmux.conf
