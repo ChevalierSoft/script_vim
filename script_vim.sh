@@ -32,4 +32,5 @@ then
 	cp ./colors/$n_scheme $a_scheme
 fi
 
-echo "#set -g default-terminal \"xterm\"" >> ~/.tmux.conf
+echo "set -g default-terminal \"screen-256color\"" >> ~/.tmux.conf
+#set -g default-terminal "screen-256color"
