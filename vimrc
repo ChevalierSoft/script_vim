@@ -6,4 +6,5 @@ set shiftwidth=4
 set nu
 set colorcolumn=80
 set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:⏎,space:·
+set smartindent
 
