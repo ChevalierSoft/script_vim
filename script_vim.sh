@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vim= ~/.vim
+vim=~/.vim
 vimrc=~/.vimrc
 colors=~/.vim/colors
 n_scheme=molokai.vim
@@ -28,8 +28,8 @@ fi
 
 if [ ! -f $a_scheme ]
 then
-	echo "scheme copied"
 	cp ./colors/$n_scheme $a_scheme
+	echo "scheme copied"
 fi
 
 echo "set -g default-terminal \"screen-256color\"" >> ~/.tmux.conf
