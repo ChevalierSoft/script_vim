@@ -12,3 +12,5 @@ set hlsearch
 :command Wq wq
 :command W w
 :command Q q
+:command H %!xxd
+:command HH %!xxd -r
