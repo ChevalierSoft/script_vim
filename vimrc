@@ -14,3 +14,4 @@ set hlsearch
 :command Q q
 :command H %!xxd
 :command HH %!xxd -r
+set termguicolors
