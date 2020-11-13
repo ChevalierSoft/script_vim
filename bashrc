@@ -14,10 +14,14 @@ alias l='ls $LS_OPTIONS -lA'
 PS1=""
 PS1="$PS1"'\[\033[00m\]['
 PS1="$PS1"'\[\033[35m\]\u'
-PS1="$PS1"'\[\033[00m\]@'
-PS1="$PS1"'\[\033[36m\]\h'
+PS1="$PS1"'\[\033[00m\]❀'
+PS1="$PS1"'\[\033[35m\]\h'
 PS1="$PS1"'\[\033[37m\] (✿◠‿◠)'
 PS1="$PS1"'\[\033[36m\]\w'
 PS1="$PS1"'\[\033[00m\]]'
 PS1="$PS1"'\[\033[00m\]\$ '
 
+USER=dait-atm
+export USER
+MAIL=dait-atm@student.42.fr
+export MAIL
