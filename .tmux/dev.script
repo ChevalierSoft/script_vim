@@ -1,0 +1,7 @@
+selectp -t 0
+splitw -h -p 50
+splitw -h -p 66
+splitw -h -p 50
+selectp -t 0
+splitw -h -p 66
+splitw -h -p 50
