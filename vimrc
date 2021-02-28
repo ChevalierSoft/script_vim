@@ -1,4 +1,13 @@
+""" vimrc
+
+" this two values are set for compatibility with tmux
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" theme
 colorscheme molokai
+
+" settings
 syntax on
 set mouse=a
 set tabstop=4
@@ -8,6 +17,8 @@ set colorcolumn=80
 set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:⏎,space:·
 set smartindent
 set hlsearch
+
+"binds
 :command WQ wq
 :command Wq wq
 :command W w
@@ -32,3 +43,6 @@ endif
 " F7 will show hexdump of the file, while f8 convert it to ascii
 :nnoremap <F7> :H<CR>
 :nnoremap <F8> :HH<CR>
+
+" hide/hilight with F4
+:nnoremap <F4> :set hlsearch! hlsearch?<CR>
