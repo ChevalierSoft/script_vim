@@ -44,5 +44,8 @@ endif
 :nnoremap <F7> :H<CR>
 :nnoremap <F8> :HH<CR>
 
-" hide/hilight with F4
+" display/hide hilights with F4
 :nnoremap <F4> :set hlsearch! hlsearch?<CR>
+
+" display/hide invisible characters
+:nnoremap <F5> :set list! list?<CR>
