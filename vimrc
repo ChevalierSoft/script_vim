@@ -49,3 +49,7 @@ endif
 
 " display/hide invisible characters
 :nnoremap <F5> :set list! list?<CR>
+
+" show relative numbers in the margin
+:nnoremap <F3> :set relativenumber! relativenumber?<CR>
+
