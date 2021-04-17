@@ -7,7 +7,6 @@
 " by Wimer Hazenberg and its darker variant
 " by Hamish Stuart Macpherson
 "
-
 hi clear
 
 if version > 580
