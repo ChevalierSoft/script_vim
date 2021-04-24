@@ -53,3 +53,6 @@ endif
 " show relative numbers in the margin
 :nnoremap <F3> :set relativenumber! relativenumber?<CR>
 
+" avoid auto indent when pasting
+set pastetoggle=<F2>
+
