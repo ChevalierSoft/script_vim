@@ -25,7 +25,24 @@ setopt extendedglob
 zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
 
 autoload colors; colors
-export PS1="%B[%{$fg[red]%}%n%{$reset_color%}%b@%B%{$fg[cyan]%}%m%b%{$reset_color%}:%~%B]%b "
+
+# PS1
+#export PS1="%B[%{$fg[red]%}%n%{$reset_color%}%b@%B%{$fg[cyan]%}%m%b%{$reset_color%}:%~%B]%b "
+
+USER="%F{207}%n%f"
+AT="%F{057}×%f"
+MACHINE="%F{207}%m%f"
+MASCOTTE="%F{057}(☼﹏☼)%f"
+#MASCOTTE="%F{057}(✿◠‿◠)%f"
+#DIR="%~"
+
+export PS1="$USER$AT$MACHINE $MASCOTTE$DIR "
+
+# Time right side
+RPROMPT='%F{057}%~ %*%f'
+
+# PS2
+export PS2="%F{057}| %f"
 
 #alias ls='ls -Gp' // to do: changer les couleurs
 alias ls='ls -p'
