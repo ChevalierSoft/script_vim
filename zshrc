@@ -33,10 +33,12 @@ USER="%F{207}%n%f"
 AT="%F{057}×%f"
 MACHINE="%F{207}%m%f"
 MASCOTTE="%F{057}(☼﹏☼)%f"
-#MASCOTTE="%F{057}(✿◠‿◠)%f"
+#MASCOTTE="%F{057}ཀ_ཀ%f"
 #DIR="%~"
+#ROLE="%F{207}» %f"
+ROLE="%F{207}𝄪 %f"
 
-export PS1="$USER$AT$MACHINE $MASCOTTE$DIR "
+export PS1=" $USER$AT$MACHINE $MASCOTTE$DIR $ROLE"
 
 # Time right side
 RPROMPT='%F{057}%~ %*%f'
