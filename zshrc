@@ -36,7 +36,7 @@ MASCOTTE="%F{057}(☼﹏☼)%f"
 #MASCOTTE="%F{057}ཀ_ཀ%f"
 #DIR="%~"
 #ROLE="%F{207}» %f"
-ROLE="%F{207}𝄪 %f"
+ROLE="%F{207}× %f"
 
 export PS1=" $USER$AT$MACHINE $MASCOTTE$DIR $ROLE"
 
