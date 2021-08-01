@@ -3,8 +3,6 @@
 tmux=~/.tmux/
 tmuxconf=~/.tmux.conf
 
-a_scheme=$colors/$n_scheme
-
 if [ -f $tmuxconf ]
 then
 	date=$(date '+%d-%m-%y_%H:%M:%S')
@@ -13,11 +11,11 @@ then
 	mv $tmuxconf ~/$new_tmuxconf
 fi
 
-cp ./.tmux.conf $tmuxconf
+cp ./tmux.conf $tmuxconf
 
 if [ ! -d $tmux ]
 then
 	mkdir $tmux
 fi
 
-cp ./.tmux/* ~/.tmux/
+cp ./tmux/* ~/.tmux/
