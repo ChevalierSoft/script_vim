@@ -22,6 +22,10 @@ set hlsearch
 autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" shaders extentions syntax on
+autocmd BufNewFile,BufRead *.glsl set syntax=c
+autocmd BufNewFile,BufRead *.frag set syntax=c
+
 "binds
 :command WQ wq
 :command Wq wq
