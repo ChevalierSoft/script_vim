@@ -6,7 +6,7 @@ set nocompatible
 set backspace=2
 
 " theme
-colorscheme molokai
+" colorscheme molokai
 
 " settings
 syntax on
