@@ -17,6 +17,7 @@ set colorcolumn=80
 set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:⏎,space:·
 set smartindent
 set hlsearch
+set cursorline
 
 " yml/yaml indentation
 autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
