@@ -47,8 +47,8 @@ RPROMPT='%F{057}%~ %*%f'
 export PS2="%F{057}| %f"
 
 #alias ls='ls -Gp' // to do: changer les couleurs
-alias ls='ls -p --color'
-alias ll='ls -Gp -lh --color'
+#alias ls='ls -p --color'
+#alias ll='ls -Gp -lh --color'
 
 alias sl='ls'
 # Alias df -h
