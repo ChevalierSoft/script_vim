@@ -24,3 +24,4 @@ sudo docker ps
 
 echo "done\nTo add an user to docker group : 'sudo usermod -aG docker user-name', Then reboot"
 
+echo "To set a context :\n  docker context create test --docker \"host=ssh://<username>@<ip-of-server>\""
