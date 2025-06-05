@@ -21,10 +21,6 @@ PS1="$PS1"'\[\033[36m\]\w'
 PS1="$PS1"'\[\033[00m\]]'
 PS1="$PS1"'\[\033[00m\]\$ '
 
-export USER=dait-atm
-export MAIL=dait-atm@student.42.fr
-
-export D="cd /mnt/d"
-export Git="cd /mnt/d/Git"
-export dsk="cd /mnt/c/Users/ChevalierSoft/Desktop"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
