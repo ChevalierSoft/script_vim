@@ -1,7 +1,11 @@
-sudo apt install -y htop btop lsof
+sudo apt install -y htop btop lsof ipcalc
 
-# set docker-context
+mkdir -p ~/git/
 
-#docker context create test --docker "host=ssh://<username>@<ip-of-server>"
-#docker context use test
-#docker ps
+echo "installing number converter toolbox"
+git clone https://github.com/ChevalierSoft/bdh-quick-converter.git ~/git/
+
+echo "installing pswdgen"
+go install github.com/chevaliersoft/pswdgen@v1.0.0
+
+echo "done"
