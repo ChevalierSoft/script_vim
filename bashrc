@@ -4,6 +4,9 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+
 PS1_symbol() {
   local ret=$?
   if [ "$ret" -eq 0 ]; then
@@ -17,6 +20,14 @@ _random_color() {
 }
 
 PS1='$(PS1_symbol)'
+# PS1="$PS1"'\e[38;5;52m\]\u'
+# PS1="$PS1"'\[\033[00m\]❀'
+# PS1="$PS1"'\e[38;5;53m\]\h'
+# PS1="$PS1"'\[\033[37m\] (✿◠‿◠)'
+# PS1="$PS1"'\e[38;5;54m\]\w'
+# PS1="$PS1"'\e[38;5;13m\] 𐄂'
+# PS1="$PS1"'\[\033[00m\] '
+
 PS1="$PS1"'\[\e[38;5;52m\]\u'
 PS1="$PS1"'\[\e[38;5;$(_random_color)m\]❀\[\033[00m\]'
 # PS1="$PS1"'\[\e[38;5;250m\]❀'
@@ -35,9 +46,13 @@ PS1="$PS1"'\[\033[00m\] '
 # PS1="$PS1"'\[\e[38;5;$(_random_color)m\] 𐄂\[\033[00m\]'
 # PS1="$PS1"' '
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+
+export D="cd /mnt/d"
+export Git="cd /mnt/d/Git"
+export dsk="cd /mnt/c/Users/ChevalierSoft/Desktop"
 
 export PATH=$PATH:/usr/local/go/bin:~/go/bin
 
 . "$HOME/.local/bin/env"
+
+eval "$(zoxide init bash)"
